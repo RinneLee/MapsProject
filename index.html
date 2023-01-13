@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+ @license
+ Copyright 2019 Google LLC. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+-->
+<html>
+  <head>
+    <title>Maps Task</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.ts"></script>
+    <script src="./storage.js"></script>
+    <script src="buttonAction.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  </head>
+
+  <body class="body">
+      
+      
+      <input id="pac-input" class="controls" type="text" placeholder="Search"/>
+      <div class="row">
+
+        <button onclick="clearInput()" class="removeButton" >Clear</button>
+        <button onclick='moveAddress();' class="saveButton">Save Location</button>
+      </div>
+      <div class = "floatingBox">
+        <div class="fit-box">
+          <div class= "insideBoxHead">
+            <h4 >Saved History</h4>
+          </div>
+        </div>
+        <div id="addressContainer">
+        <div class= "insideBox">
+        </div>
+        </div>
+      </div>
+
+
+    <div id="map"></div>
+
+
+    
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkXk3MuVjovvaVAnl2wt2j_2ES-INLJ0s&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+  height: 100%;
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  align-content: left;
+  text-align: left;
+  align-items: left;
+}
+
+.navbar{
+  height: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-button{
+  background-color: #4d90fe;
+  font-family: Roboto;
+  margin: 3px;
+  color: white;
+}
+
+.dropdown-menu{
+  position: absolute;
+  z-index: 10;
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  background-color: #fff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  font-family: Roboto;
+  padding: 0;
+}
+
+#pac-container {
+  text-align: center;
+  overflow: hidden;
+  width: 90%;
+  align-items: center;
+  position: absolute;
+  padding: 10px;
+  opacity: 0.9;
+  height: 80px;
+  border-radius: 10px;
+}
+.pac-container:after {
+  background-image: none;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: 12px;
+  margin-top: 10px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 70%;
+  height: 3%;
+  border-radius: 10px;
+  border-style: groove;
+  
+
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.removeButton{
+  border: 3px solid rgba(255,255,255,.5);
+  border-radius: 5px;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  padding: auto;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  z-index: 12;
+  margin-top: 58px;
+  margin-left: 120px;
+}
+
+.removeButton:hover{
+  border: 3px solid rgba(255,255,255,.5);
+  color: fff;
+  background-color: darkred;
+  padding: auto;
+}
+
+.saveButton{
+  border: 3px solid rgba(255,255,255,.5);
+  border-radius: 5px;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #fff;
+  background-color: green;
+  padding: auto;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  z-index: 12;
+  margin-top: 58px;
+  margin-left: 20px;
+}
+
+.saveButton:hover{
+  border: 3px solid rgba(255,255,255,.5);
+  color: fff;
+  background-color: darkgreen;
+  padding: auto;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+.floatingBox{
+  border: 3px solid rgba(255,255,255,.5);
+  width: 200px;
+  background-color: white;
+  overflow-y: scroll;
+  height: auto;
+  max-height: 600px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 100px;
+  opacity: 90%;
+}
+
+.floatingBox::-webkit-scrollbar {
+  display: none;
+}
+
+.insideBoxHead {
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  background-color: #4d90fe;
+  opacity: 90%;
+  color: white;
+  font-size: 18px; 
+}
+
+.insideBoxHead h4{
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.insideBox {
+  text-align: center;
+}
+
+.insideButton{
+  padding: 10px;
+  width: 100%;
+  background-color: #68a2ff62;
+  border-color: #77ffc025;
+}
+
+.insideButton:hover{
+  padding: 20px;
+  width: 100%;
+  background-color: #adcbfc62;
+}
+
+.insideButton h4{
+  color: #0000FF;
+  font-weight: bold;
+  
+}
+
+.insideButton p{
+  color: black;
+}
